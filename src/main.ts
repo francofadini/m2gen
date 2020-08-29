@@ -1,6 +1,6 @@
 import InputLoop from 'https://deno.land/x/input/index.ts'
-import { Generator } from './generator.ts'
-import { MobileGenerator } from './mobile-generator.ts'
+import { Generator } from './generators/generator.ts'
+import { MobileGenerator } from './generators/mobile-generator.ts'
 
 const main = async (args: string[]) => {
   let input = new InputLoop()
