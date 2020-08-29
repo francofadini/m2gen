@@ -4,7 +4,7 @@ MVP base project code generator. Built with Deno@1.3.0
 
 ## Install
 
- `deno install --allow-run --name m2gen main.ts`
+ `deno install --allow-run --name m2gen src/main.ts`
 
 ### Usage
 
