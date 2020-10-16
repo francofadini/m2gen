@@ -6,6 +6,7 @@ export class MobileGenerator implements Generator {
   public async generate(){
     let input = new InputLoop()
     let projectName = await input.question("Choose an alphanumeric name for the project. ex: MyProjectName")
+    let packageName = await input.question("Choose an package name for the project. ex: co.made2.base")
 
     if (!this.isAlphaNumeric(projectName)) {
       console.log("Name should be alpanumeric.")
@@ -14,7 +15,7 @@ export class MobileGenerator implements Generator {
 
     console.log('Initializing template...')
 
-    await exec(`npx react-native init ${projectName} --template https://github.com/francofadini/react-native-template-base-project`)
+    await exec(`npx react-native init ${projectName} --template https://github.com/francofadini/react-native-template-base-project --package=${packageName}`)
     
     console.log('React Native template created! 🎉')
   }

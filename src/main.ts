@@ -12,7 +12,7 @@ const main = async (args: string[]) => {
 
   if (result[0]) {
     let mobileGenerator: Generator = new MobileGenerator()
-    mobileGenerator.generate
+    mobileGenerator.generate()
   }
 
   if (result[1]) {
